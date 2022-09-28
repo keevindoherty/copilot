@@ -1,6 +1,6 @@
 #+TITLE: copilot layer
 
-Spacemacs layer wrapping the Emacs package [[https://github.com/zerolfx/copilot.el][]]. This package enables the use of GitHub Copilot in Spacemacs.
+Spacemacs layer wrapping the Emacs package [[https://github.com/zerolfx/copilot.el][copilot]]. This package enables the use of GitHub Copilot in Spacemacs.
 
 
 # TOC links should be GitHub style anchors.
@@ -22,7 +22,7 @@ Spacemacs layer wrapping the Emacs package [[https://github.com/zerolfx/copilot.
 The setup process involves cloning the repo into =~/.emacs.d/private=, then
 adding =copilot= to your =~/.spacemacs=.
 
-=git clone https://github.com/keevindoherty/copilot.git ~/.emacs.d/private/read-aloud= 
+=git clone https://github.com/keevindoherty/copilot.git ~/.emacs.d/private/copilot= 
   
 To use this configuration layer, add it to your =~/.spacemacs=. You will need to
 add =copilot= to the existing =dotspacemacs-configuration-layers= list in this
