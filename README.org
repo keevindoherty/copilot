@@ -1,0 +1,49 @@
+#+TITLE: copilot layer
+
+Spacemacs layer wrapping the Emacs package [[https://github.com/zerolfx/copilot.el][]]. This package enables the use of GitHub Copilot in Spacemacs.
+
+
+# TOC links should be GitHub style anchors.
+* Table of Contents                                        :TOC_4_gh:noexport:
+- [[#description][Description]]
+- [[#install][Install]]
+
+* Description
+  This is a simple layer wrapping the =copilot.el= Emacs package for use of GitHub Copilot.
+
+# ** Features:
+#   - Autocomplete
+#   - Lint
+#   - Refactor
+  # - ...
+
+* Install
+  
+The setup process involves cloning the repo into =~/.emacs.d/private=, then
+adding =copilot= to your =~/.spacemacs=.
+
+=git clone https://github.com/keevindoherty/copilot.git ~/.emacs.d/private/read-aloud= 
+  
+To use this configuration layer, add it to your =~/.spacemacs=. You will need to
+add =copilot= to the existing =dotspacemacs-configuration-layers= list in this
+file.
+
+# Finally, you will need to specify your external text-to-speech engine to use.
+# The =read-aloud.el= Emacs package has [[https://github.com/gromnitsky/read-aloud.el#supported-tts-engines][several supported TTS engines]], for example,
+# on MacOS, add the following to your =dotspacemacs/user-init=:
+
+# =(setq read-aloud-engine "say")=
+
+# * Usage
+
+# | Command               | Description                                        |
+# |-----------------------+----------------------------------------------------|
+# | ~M-x read-aloud-this~ | Pronounce the selection                            |
+# | ~M-x read-aloud-buf~  | Read the buffer starting from the current position |
+# | ~M-x read-aloud-stop~ | Stop reading                                       |
+
+# Use GitHub URLs if you wish to link a Spacemacs documentation file or its heading.
+# Examples:
+# [[https://github.com/syl20bnr/spacemacs/blob/master/doc/VIMUSERS.org#sessions]]
+# [[https://github.com/syl20bnr/spacemacs/blob/master/layers/%2Bfun/emoji/README.org][Link to Emoji layer README.org]]
+# If space-doc-mode is enabled, Spacemacs will open a local copy of the linked file.
