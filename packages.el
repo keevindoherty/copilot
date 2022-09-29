@@ -32,7 +32,8 @@
 (defconst copilot-packages
   '((copilot :location (recipe
                            :fetcher github
-                           :repo "zerolfx/copilot.el")))
+                           :repo "zerolfx/copilot.el"
+                           :files (:defaults "dist"))))
   "The list of Lisp packages required by the copilot layer.
 
 Each entry is either:
@@ -62,6 +63,7 @@ Each entry is either:
 
 (defun copilot/init-copilot ()
   (use-package copilot
-    :defer t))
+    :ensure t)
+  )
 
 ;;; packages.el ends here
